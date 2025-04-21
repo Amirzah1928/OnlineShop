@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Programing\\C#\\Projects\\OnlineShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA9A1CD-C83C-4E63-BFA0-B330A6C9975F}|OnlineShop\\OnlineShop.csproj|g:\\programing\\c#\\projects\\onlineshop\\onlineshop\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA9A1CD-C83C-4E63-BFA0-B330A6C9975F}|OnlineShop\\OnlineShop.csproj|solutionrelative:onlineshop\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Programing\\C#\\Projects\\Amir\\Amir\\Controllers\\BookController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "G:\\Programing\\C#\\Projects\\Amir\\Amir\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "..\\Amir\\Amir\\Controllers\\BookController.cs",
+              "ToolTip": "G:\\Programing\\C#\\Projects\\Amir\\Amir\\Controllers\\BookController.cs",
+              "RelativeToolTip": "..\\Amir\\Amir\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T13:03:22.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "G:\\Programing\\C#\\Projects\\OnlineShop\\OnlineShop\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "OnlineShop\\Controllers\\UserController.cs",
+              "ToolTip": "G:\\Programing\\C#\\Projects\\OnlineShop\\OnlineShop\\Controllers\\UserController.cs*",
+              "RelativeToolTip": "OnlineShop\\Controllers\\UserController.cs*",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T12:38:12.354Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

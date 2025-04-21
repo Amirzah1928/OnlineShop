@@ -1,0 +1,139 @@
+[
+  {
+    "ContainingType": "OnlineShop.Controllers.UserController",
+    "Method": "Create",
+    "RelativePath": "Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newUser",
+        "Type": "OnlineShop.DTOs.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineShop.Controllers.UserController",
+    "Method": "GetUsersToList",
+    "RelativePath": "Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineShop.Controllers.UserController",
+    "Method": "Edit",
+    "RelativePath": "Users/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "OnlineShop.DTOs.UpdateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineShop.Controllers.UserController",
+    "Method": "Delete",
+    "RelativePath": "Users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newUser",
+        "Type": "OnlineShop.DTOs.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineShop.Controllers.UserController",
+    "Method": "GetUsers",
+    "RelativePath": "Users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineShop.Controllers.UserController",
+    "Method": "GetUsersFullName",
+    "RelativePath": "Users/{id}/GetFullName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineShop.Controllers.UserController",
+    "Method": "ToggleActivation",
+    "RelativePath": "Users/{id}/ToggleActivation",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "OnlineShop.DTOs.UpdateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineShop.Controllers.UserController",
+    "Method": "SearchUsers",
+    "RelativePath": "Users/SearchUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
