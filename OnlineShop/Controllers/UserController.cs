@@ -1,26 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NetTopologySuite.Geometries;
 using OnlineShop.DTOs;
 using OnlineShop.Models;
+using OnlineShop.Services;
+using OnlineShop.ViewModels;
 
 namespace OnlineShop.Controllers
 {
     [ApiController]
     [Route("Users")]
-    public class UserController(OnlineShopDBContext db) : Controller
+    public class UserController(IUserService userService) : Controller
     {
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateUserDto newUser, CancellationToken cancellation)
         {
-            var user = new User
-            {
-                FirstName = newUser.FirstName,
-                LastName = newUser.LastName,
-                PhoneNumber = newUser.PhoneNumber,
-            };
-
-            await db.Users.AddAsync(user, cancellation);
-            await db.SaveChangesAsync(cancellation);
+            await userService.CreateAsync(newUser,cancellation);
 
             return Ok();
         }
@@ -28,100 +23,41 @@ namespace OnlineShop.Controllers
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Edit([FromRoute] int id, [FromBody] UpdateUserDto input, CancellationToken cancellation)
         {
-            var user = await db.Users.FirstOrDefaultAsync(x => x.Id == id, cancellation);
-            if (user == null)
-                return NotFound();
-            if (input.FirstName != string.Empty)
-                user.FirstName = input.FirstName;
-
-            if (input.LastName != string.Empty)
-                user.LastName = input.LastName;
-
-            db.Users.Update(user);
-            await db.SaveChangesAsync(cancellation);
+            await userService.UpdateAsync(id,input,cancellation);
 
             return Ok();
         }
 
         [HttpDelete("{id:int}")]
-        public async Task<IActionResult> Delete([FromRoute] int id, [FromBody] CreateUserDto newUser, CancellationToken cancellation)
+        public async Task<IActionResult> Delete([FromRoute] int id, CancellationToken cancellation)
         {
-            var user = await db.Users.FirstOrDefaultAsync(x => x.Id == id, cancellation);
-            if (user == null)
-                return NotFound();
-
-            db.Users.Remove(user);
-            await db.SaveChangesAsync(cancellation);
+            await userService.DeleteAsync(id,cancellation);
 
             return Ok();
         }
 
         [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetUsers([FromRoute] int id, CancellationToken cancellation)
+        public async Task<IActionResult> GetById([FromRoute] int id, CancellationToken cancellation)
         {
-            var users = await db.Users.FirstOrDefaultAsync(x => x.Id == id, cancellation);
-            if (users == null)
-                return NotFound();
-
-            return Ok(users);
+            var result = await userService.GetByIdAsync(id,cancellation);
+            return Ok(result);
         }
 
 
         [HttpGet]
-        public async Task<IActionResult> GetUsersToList(CancellationToken cancellation)
+        public async Task<IActionResult> GetList([FromQuery] string? q, CancellationToken cancellation)
         {
-            var users = await db.Users.ToListAsync(cancellation);
-            return Ok(users);
+           var viewModel = await userService.GetListAsync(q,cancellation);
+
+            return Ok(viewModel);
         }
 
         [HttpPut("{id:int}/ToggleActivation")]
         public async Task<IActionResult> ToggleActivation([FromRoute] int id, [FromBody] UpdateUserDto input, CancellationToken cancellation)
         {
-            var user = await db.Users.FirstOrDefaultAsync(x => x.Id == id, cancellation);
-            if (user == null)
-                return NotFound();
-
-            user.Isactive = !user.Isactive;
-
-
-            db.Users.Update(user);
-            await db.SaveChangesAsync(cancellation);
+            await userService.ToggleActivationAsync(id,input,cancellation);
 
             return Ok();
-        }
-
-        [HttpGet("{id:int}/GetFullName")]
-        public async Task<IActionResult> GetUsersFullName([FromRoute] int id, CancellationToken cancellation)
-        {
-            var users = await db.Users.FirstOrDefaultAsync(x => x.Id == id, cancellation);
-            if (users == null)
-                return NotFound();
-
-            var user = new GetUsersWithFullNameDto
-            {
-                Id = users.Id,
-                FirstName = users.FirstName,
-                LastName = users.LastName,
-                PhoneNumber = users.PhoneNumber,
-                Isactive = users.Isactive,
-                FullName = users.FirstName + " " + users.LastName,
-            };
-           
-            return Ok(user);
-        }
-
-
-        [HttpGet("SearchUsers")]
-        public async Task<IActionResult> SearchUsers([FromQuery] string q, CancellationToken cancellation)
-        {
-            var usersList = await db.Users.Where(u => u.FirstName.Contains(q) || u.LastName.Contains(q))
-            .ToListAsync(cancellation);
-            if (usersList.Count == 0)
-                return NotFound();
-
-            
-
-            return Ok(usersList);
         }
     }
 }

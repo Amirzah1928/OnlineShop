@@ -174,3 +174,4 @@ G:\Programing\C#\Projects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.cspr
 G:\Programing\C#\Projects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.MvcApplicationPartsAssemblyInfo.cs
 G:\Programing\C#\Projects\OnlineShop\OnlineShop\obj\Debug\net8.0\EFCoreSqlServerNetTopologySuite.cs
 G:\Programing\C#\Projects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.Up2Date
+G:\Programing\C#\Projects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.sourcelink.json
