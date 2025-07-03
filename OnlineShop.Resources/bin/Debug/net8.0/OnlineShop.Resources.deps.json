@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "OnlineShop.Resources/1.0.0": {
+        "runtime": {
+          "OnlineShop.Resources.dll": {}
+        },
+        "resources": {
+          "Fa/OnlineShop.Resources.resources.dll": {
+            "locale": "Fa"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlineShop.Resources/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

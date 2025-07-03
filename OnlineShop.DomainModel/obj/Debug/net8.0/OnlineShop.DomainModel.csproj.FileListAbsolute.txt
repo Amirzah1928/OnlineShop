@@ -1,0 +1,13 @@
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\bin\Debug\net8.0\OnlineShop.DomainModel.deps.json
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\bin\Debug\net8.0\OnlineShop.DomainModel.dll
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\bin\Debug\net8.0\OnlineShop.DomainModel.pdb
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\obj\Debug\net8.0\OnlineShop.DomainModel.GeneratedMSBuildEditorConfig.editorconfig
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\obj\Debug\net8.0\OnlineShop.DomainModel.AssemblyInfoInputs.cache
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\obj\Debug\net8.0\OnlineShop.DomainModel.AssemblyInfo.cs
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\obj\Debug\net8.0\OnlineShop.DomainModel.csproj.CoreCompileInputs.cache
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\obj\Debug\net8.0\OnlineShop.DomainModel.sourcelink.json
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\obj\Debug\net8.0\OnlineShop.DomainModel.dll
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\obj\Debug\net8.0\refint\OnlineShop.DomainModel.dll
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\obj\Debug\net8.0\OnlineShop.DomainModel.pdb
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\obj\Debug\net8.0\ref\OnlineShop.DomainModel.dll
+G:\Programing\C#\Projects\OnlineShop\OnlineShop.DomainModel\obj\Debug\net8.0\OnlineShop.DomainModel.csproj.AssemblyReference.cache
