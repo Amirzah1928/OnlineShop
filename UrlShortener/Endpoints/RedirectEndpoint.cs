@@ -37,7 +37,7 @@ namespace UrlShortener.Endpoints
                 memoryCache.Set(code, shortUrl,TimeSpan.FromDays(1));
             }
 
-            await SendRedirectAsync(shortUrl.OriginalUrl,true);
+            await SendRedirectAsync(shortUrl.OriginalUrl, allowRemoteRedirects: true);
         }
     }
 }

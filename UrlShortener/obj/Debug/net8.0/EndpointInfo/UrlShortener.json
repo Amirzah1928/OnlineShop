@@ -1,0 +1,169 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "UrlShortener",
+    "version": "1.0"
+  },
+  "paths": {
+    "/{code}": {
+      "delete": {
+        "tags": [
+          "UrlShortener"
+        ],
+        "operationId": "UrlShortenerEndpointsDeleteShortUrlEndpoint",
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UrlShortener"
+        ],
+        "operationId": "UrlShortenerEndpointsEditoriginalUrlEndpoint",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditoriginalUrlEndpointRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "UrlShortener"
+        ],
+        "operationId": "UrlShortenerEndpointsRedirectEndpoint",
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "UrlShortener"
+        ],
+        "operationId": "UrlShortenerEndpointsListShortUrlsEndpoint",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListShortURLsEndpointResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Shorten": {
+      "post": {
+        "tags": [
+          "UrlShortener"
+        ],
+        "operationId": "UrlShortenerEndpointsShortenerUrlEndpoint",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShortnerUrlEndpointRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ShortnerUrlEndpointResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "EditoriginalUrlEndpointRequest": {
+        "type": "object",
+        "properties": {
+          "originalUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ListShortURLsEndpointResponse": {
+        "type": "object",
+        "properties": {
+          "shortUrls": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ShortUrl"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ShortUrl": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "originalUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ShortnerUrlEndpointRequest": {
+        "type": "object",
+        "properties": {
+          "originalUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ShortnerUrlEndpointResponse": {
+        "type": "object",
+        "properties": {
+          "shortUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -11,7 +11,7 @@ namespace UrlShortener.Data
         {
             var client = new MongoClient(configuration.GetConnectionString("MongoDB"));
             var database = client.GetDatabase(configuration["DatabaseSettings:DatabaseName"]);
-            ShortUrls = database.GetCollection<ShortUrl>(configuration["DatabaseSettings: CollectionName"]);
+            ShortUrls = database.GetCollection<ShortUrl>(configuration["DatabaseSettings:CollectionName"]);
         }
     }
 }

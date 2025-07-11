@@ -3,11 +3,7 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "TrackingCode\\TrackingCode.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "OnlineShop.APIs\\OnlineShop.APIs.csproj",
+        "Path": "UrlShortener\\UrlShortener.csproj",
         "Action": "Start"
       }
     ]

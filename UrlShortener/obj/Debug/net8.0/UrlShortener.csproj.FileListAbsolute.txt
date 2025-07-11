@@ -41,3 +41,7 @@ G:\Programing\C#\Projects\OnlineShop\UrlShortener\obj\Debug\net8.0\refint\UrlSho
 G:\Programing\C#\Projects\OnlineShop\UrlShortener\obj\Debug\net8.0\UrlShortener.pdb
 G:\Programing\C#\Projects\OnlineShop\UrlShortener\obj\Debug\net8.0\UrlShortener.genruntimeconfig.cache
 G:\Programing\C#\Projects\OnlineShop\UrlShortener\obj\Debug\net8.0\ref\UrlShortener.dll
+G:\Programing\C#\Projects\OnlineShop\UrlShortener\bin\Debug\net8.0\Microsoft.OpenApi.dll
+G:\Programing\C#\Projects\OnlineShop\UrlShortener\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\Programing\C#\Projects\OnlineShop\UrlShortener\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\Programing\C#\Projects\OnlineShop\UrlShortener\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll

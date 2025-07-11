@@ -9,6 +9,8 @@
   <ItemGroup>
     <PackageReference Include="FastEndpoints" Version="6.2.0" />
     <PackageReference Include="MongoDB.Driver" Version="3.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.3" />
   </ItemGroup>
 
 </Project>
